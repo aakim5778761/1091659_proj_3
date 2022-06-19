@@ -285,10 +285,7 @@ void RS_1() {
 				cout << F3;
 		}
 		else if (insts[RS1].rs1 == " F4") {
-			if (f4 != "")
-				cout << f4;
-			else
-				cout << F4;
+			cout << F4;
 		}
 		else if (insts[RS1].rs1 == " F5") {
 			if (f5 != "")
@@ -347,7 +344,7 @@ void RS_1() {
 		else if (insts[RS2].op == "DIV")
 			cout << "/";
 		cout << "|";
-		if (insts[RS2].rs1 == "F1") {
+		if (insts[RS2].rs1 == "F1"|| insts[RS2].rs1 == " F1") {
 			if (f1 != "")
 				cout << f1;
 			else
@@ -622,9 +619,6 @@ void RS_2() {
 				cout << F1;
 		}
 		else if (insts[RS4].rs1 == " F2") {
-			if (f2 != "")
-				cout << f2;
-			else
 				cout << F2;
 		}
 		else if (insts[RS4].rs1 == " F3") {
@@ -743,10 +737,7 @@ void RS_2() {
 				cout << F3;
 		}
 		else if (insts[RS5].rs2 == " F4" || insts[RS5].rs2 == "F4") {
-			if (f4 != "")
-				cout << f4;
-			else
-				cout << F4;
+			cout << F4;
 		}
 		else if (insts[RS5].rs2 == " F5"|| insts[RS5].rs2 == "F5") {
 			if (f5 != "")
