@@ -300,31 +300,31 @@ void RS_1() {
 		if (insts[RS1].op == "ADDI")
 			cout << insts[RS1].i << " | \n";
 		else {
-			if (insts[RS1].rs2 == " F1") {
+			if (insts[RS1].rs2 == " F1" || insts[RS1].rs2 == "F1") {
 				if (f1 != "")
 					cout << f1;
 				else
 					cout << F1;
 			}
-			else if (insts[RS1].rs2 == " F2") {
+			else if (insts[RS1].rs2 == " F2" || insts[RS1].rs2 == "F2") {
 				if (f2 != "")
 					cout << f2;
 				else
 					cout << F2;
 			}
-			else if (insts[RS1].rs2 == " F3") {
+			else if (insts[RS1].rs2 == " F3" || insts[RS1].rs2 == "F3") {
 				if (f3 != "")
 					cout << f3;
 				else
 					cout << F3;
 			}
-			else if (insts[RS1].rs2 == " F4") {
+			else if (insts[RS1].rs2 == " F4" || insts[RS1].rs2 == "F4") {
 				if (f4 != "")
 					cout << f4;
 				else
 					cout << F4;
 			}
-			else if (insts[RS1].rs2 == " F5") {
+			else if (insts[RS1].rs2 == " F5" || insts[RS1].rs2 == "F5") {
 				if (f5 != "")
 					cout << f5;
 				else
@@ -380,19 +380,19 @@ void RS_1() {
 		if (insts[RS2].op == "ADDI")
 			cout << insts[RS2].i << " | \n";
 		else {
-			if (insts[RS2].rs2 == " F1") {
+			if (insts[RS2].rs2 == " F1" || insts[RS2].rs2 == "F1") {
 				if (f1 != "")
 					cout << f1;
 				else
 					cout << F1;
 			}
-			else if (insts[RS2].rs2 == " F2") {
+			else if (insts[RS2].rs2 == " F2" || insts[RS2].rs2 == "F2") {
 				if (f2 != "")
 					cout << f2;
 				else
 					cout << F2;
 			}
-			else if (insts[RS2].rs2 == " F3") {
+			else if (insts[RS2].rs2 == " F3" || insts[RS2].rs2 == "F3") {
 				if (f3 != "")
 					cout << f3;
 				else
@@ -404,7 +404,7 @@ void RS_1() {
 				else
 					cout << F4;
 			}
-			else if (insts[RS2].rs2 == " F5") {
+			else if (insts[RS2].rs2 == " F5" || insts[RS2].rs2 == "F5") {
 				if (f5 != "")
 					cout << f5;
 				else
@@ -461,31 +461,31 @@ void RS_1() {
 		if (insts[RS3].op == "ADDI")
 			cout << insts[RS3].i << " | \n";
 		else {
-			if (insts[RS3].rs2 == " F1") {
+			if (insts[RS3].rs2 == " F1" || insts[RS3].rs2 == "F1") {
 				if (f1 != "")
 					cout << f1;
 				else
 					cout << F1;
 			}
-			else if (insts[RS3].rs2 == " F2") {
+			else if (insts[RS3].rs2 == " F2" || insts[RS3].rs2 == "F2") {
 				if (f2 != "")
 					cout << f2;
 				else
 					cout << F2;
 			}
-			else if (insts[RS3].rs2 == " F3") {
+			else if (insts[RS3].rs2 == " F3" || insts[RS3].rs2 == "F3") {
 				if (f3 != "")
 					cout << f3;
 				else
 					cout << F3;
 			}
-			else if (insts[RS3].rs2 == " F4") {
+			else if (insts[RS3].rs2 == " F4" || insts[RS3].rs2 == "F4") {
 				if (f4 != "")
 					cout << f4;
 				else
 					cout << F4;
 			}
-			else if (insts[RS3].rs2 == " F5") {
+			else if (insts[RS3].rs2 == " F5" || insts[RS3].rs2 == "F5") {
 				if (f5 != "")
 					cout << f5;
 				else
@@ -528,19 +528,19 @@ void RS_1() {
 	else if (bbb1[b11].rs1 == " F5") {
 		b1rs1 = &F5;
 	}
-	if (bbb1[b11].rs2 == " F1") {
+	if (bbb1[b11].rs2 == " F1" || bbb1[b11].rs2 == "F1") {
 		b1rs2 = &F1;
 	}
-	else if (bbb1[b11].rs2 == " F2") {
+	else if (bbb1[b11].rs2 == " F2" || bbb1[b11].rs2 == "F2") {
 		b1rs2 = &F2;
 	}
-	else if (bbb1[b11].rs2 == " F3") {
+	else if (bbb1[b11].rs2 == " F3"|| bbb1[b11].rs2 == "F3") {
 		b1rs2 = &F3;
 	}
-	else if (bbb1[b11].rs2 == " F4") {
+	else if (bbb1[b11].rs2 == " F4" || bbb1[b11].rs2 == "F4") {
 		b1rs2 = &F4;
 	}
-	else if (bbb1[b11].rs2 == " F5") {
+	else if (bbb1[b11].rs2 == " F5" || bbb1[b11].rs2 == "F5") {
 		b1rs2 = &F5;
 	}
 	if (bbb1[b11].rd != "")
@@ -619,32 +619,31 @@ void RS_2() {
 				cout << F5;
 		}
 		cout << " | ";
-		cout << "|";
-		if (insts[RS4].rs2 == " F1") {
+		if (insts[RS4].rs2 == " F1" || insts[RS4].rs2 == "F1") {
 			if (f1 != "")
 				cout << f1;
 			else
 				cout << F1;
 		}
-		else if (insts[RS4].rs2 == " F2") {
+		else if (insts[RS4].rs2 == " F2" || insts[RS4].rs2 == "F2") {
 			if (f2 != "")
 				cout << f2;
 			else
 				cout << F2;
 		}
-		else if (insts[RS4].rs2 == " F3") {
+		else if (insts[RS4].rs2 == " F3"|| insts[RS4].rs2 == "F3") {
 			if (f3 != "")
 				cout << f3;
 			else
 				cout << F3;
 		}
-		else if (insts[RS4].rs2 == " F4") {
+		else if (insts[RS4].rs2 == " F4" || insts[RS4].rs2 == "F4") {
 			if (f4 != "")
 				cout << f4;
 			else
 				cout << F4;
 		}
-		else if (insts[RS4].rs2 == " F5") {
+		else if (insts[RS4].rs2 == " F5" || insts[RS4].rs2 == "F5") {
 			if (f5 != "")
 				cout << f5;
 			else
@@ -698,31 +697,31 @@ void RS_2() {
 		}
 		cout << " |";
 		cout << "|";
-		if (insts[RS5].rs2 == " F1") {
+		if (insts[RS5].rs2 == " F1" || insts[RS5].rs2 == "F1") {
 			if (f1 != "")
 				cout << f1;
 			else
 				cout << F1;
 		}
-		else if (insts[RS5].rs2 == " F2") {
+		else if (insts[RS5].rs2 == " F2" || insts[RS5].rs2 == "F2") {
 			if (f2 != "")
 				cout << f2;
 			else
 				cout << F2;
 		}
-		else if (insts[RS5].rs2 == " F3") {
+		else if (insts[RS5].rs2 == " F3" || insts[RS5].rs2 == "F3") {
 			if (f3 != "")
 				cout << f3;
 			else
 				cout << F3;
 		}
-		else if (insts[RS5].rs2 == " F4") {
+		else if (insts[RS5].rs2 == " F4" || insts[RS5].rs2 == "F4") {
 			if (f4 != "")
 				cout << f4;
 			else
 				cout << F4;
 		}
-		else if (insts[RS5].rs2 == " F5") {
+		else if (insts[RS5].rs2 == " F5"|| insts[RS5].rs2 == "F5") {
 			if (f5 != "")
 				cout << f5;
 			else
@@ -764,19 +763,19 @@ void RS_2() {
 	else if (bbb2[b22].rs1 == " F5") {
 		b2rs1 = &F5;
 	}
-	if (bbb2[b22].rs2 == " F1") {
+	if (bbb2[b22].rs2 == " F1"|| bbb2[b22].rs2 == "F1") {
 		b2rs2 = &F1;
 	}
-	else if (bbb2[b22].rs2 == " F2") {
+	else if (bbb2[b22].rs2 == " F2" || bbb2[b22].rs2 == "F2") {
 		b2rs2 = &F2;
 	}
-	else if (bbb2[b22].rs2 == " F3") {
+	else if (bbb2[b22].rs2 == " F3"|| bbb2[b22].rs2 == "F3") {
 		b2rs2 = &F3;
 	}
-	else if (bbb2[b22].rs2 == " F4") {
+	else if (bbb2[b22].rs2 == " F4" || bbb2[b22].rs2 == "F4") {
 		b2rs2 = &F4;
 	}
-	else if (bbb2[b22].rs2 == " F5") {
+	else if (bbb2[b22].rs2 == " F5" || bbb2[b22].rs2 == "F5") {
 		b2rs2 = &F5;
 	}
 	if (bbb2[b22].rd != "")
@@ -853,7 +852,7 @@ int main() {
 	}
 	for (int i = 0; i < 15;i++) {
 		cycle++;
-		cout << "Cycle = " << cycle << endl;
+		cout << "\nCycle = " << cycle << endl;
 		RF();
 		RAT();
 		RS_1();
