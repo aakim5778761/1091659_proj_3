@@ -850,12 +850,14 @@ int main() {
 		}
 		n--; j++;
 	}
-	for (int i = 0; i < 15;i++) {
+	while (1) {
 		cycle++;
 		cout << "\nCycle = " << cycle << endl;
 		RF();
 		RAT();
 		RS_1();
 		RS_2();
+		if (b11 + b22 == 5)
+			break;
 	}
 }
