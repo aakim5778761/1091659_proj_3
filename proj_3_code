@@ -935,7 +935,12 @@ int main() {
 		RAT();
 		RS_1();
 		RS_2();
-		if (b11 + b22 == 7)
+		if (b11 + b22 == 7) {
+			RF();
+			RAT();
+			RS_1();
+			RS_2();
 			break;
+		}
 	}
 }
