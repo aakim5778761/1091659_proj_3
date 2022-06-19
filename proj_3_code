@@ -197,6 +197,9 @@ void RAT() {
 				R5 = insts[now];
 				bbb2[bb2] = insts[now];
 			}
+			else {
+				bbb2[bb2] = insts[now];
+			}
 			bb2++;
 		}
 	}
@@ -238,6 +241,9 @@ void RAT() {
 				f5 = "RS5";
 				insts[now].name = "RS5";
 				R5 = insts[now];
+				bbb2[bb2] = insts[now];
+			}
+			else {
 				bbb2[bb2] = insts[now];
 			}
 			bb2++;
@@ -561,7 +567,9 @@ void RS_1() {
 		wait1++;
 	}
 	if (wait1 == 2) {
-		if (bbb1[b11].op == "ADD") {
+		if (bbb1[b11].name != f1 && bbb1[b11].name != f2 && bbb1[b11].name != f3 && bbb1[b11].name != f4 && bbb1[b11].name != f5) {
+		}
+		else if (bbb1[b11].op == "ADD") {
 			*b1rd = *b1rs1 + *b1rs2;
 		}
 		else if (bbb1[b11].op == "ADDI") {
@@ -935,7 +943,9 @@ int main() {
 		RAT();
 		RS_1();
 		RS_2();
-		if (b11 + b22 == 7) {
+		if (b11 + b22 == 8) {
+			cycle++;
+			cout << "\nCycle = " << cycle << endl;
 			RF();
 			RAT();
 			RS_1();
